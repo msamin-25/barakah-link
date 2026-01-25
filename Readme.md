@@ -46,8 +46,11 @@ cp .env.example .env
 
 4. Add your Gemini API key to `.env`:
 ```
+VITE_GEMINI_API_KEY=your_api_key_here
 GEMINI_API_KEY=your_api_key_here
 ```
+
+**Note:** The app supports both `VITE_GEMINI_API_KEY` and `GEMINI_API_KEY` for compatibility.
 
 Get your API key from [Google AI Studio](https://aistudio.google.com/apikey)
 
@@ -80,10 +83,11 @@ The app will be available at `http://localhost:3000`
    - Output Directory: `dist` (default)
    - Install Command: `npm install` (default)
 
-5. **Add Environment Variable**:
+5. **Add Environment Variables**:
    - Go to "Environment Variables" section
-   - Add `GEMINI_API_KEY` with your API key value
-   - Make sure it's available for Production, Preview, and Development
+   - Add `VITE_GEMINI_API_KEY` with your API key value (recommended)
+   - Also add `GEMINI_API_KEY` with the same value (for compatibility)
+   - Make sure both are available for Production, Preview, and Development
 
 6. **Click "Deploy"**
 
@@ -104,11 +108,12 @@ The app will be available at `http://localhost:3000`
    vercel
    ```
 
-4. **Add environment variable**:
+4. **Add environment variables**:
    ```bash
+   vercel env add VITE_GEMINI_API_KEY
    vercel env add GEMINI_API_KEY
    ```
-   Enter your API key when prompted.
+   Enter your API key when prompted for both.
 
 5. **Deploy to production**:
    ```bash
@@ -119,7 +124,8 @@ The app will be available at `http://localhost:3000`
 
 | Variable | Description | Required |
 |----------|-------------|----------|
-| `GEMINI_API_KEY` | Google Gemini API key for AI analysis | Yes |
+| `VITE_GEMINI_API_KEY` | Google Gemini API key for AI analysis (recommended) | Yes |
+| `GEMINI_API_KEY` | Google Gemini API key (fallback, also required) | Yes |
 
 ## Project Structure
 

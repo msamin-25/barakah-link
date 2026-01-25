@@ -1,8 +1,9 @@
 
 import { GoogleGenAI, Type } from "@google/genai";
 
-// Always use the API_KEY from process.env directly per guidelines
-const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
+// Use Vite's import.meta.env for environment variables
+const apiKey = import.meta.env.VITE_GEMINI_API_KEY || import.meta.env.GEMINI_API_KEY || (typeof process !== 'undefined' ? process.env.GEMINI_API_KEY : '');
+const ai = new GoogleGenAI({ apiKey: apiKey || '' });
 
 export interface AnalysisResult {
   tags: string[];
