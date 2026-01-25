@@ -1,0 +1,7 @@
+{
+  "name": "BarakahLink",
+  "description": "Connecting surplus food with community needs in Kitchener-Waterloo. Sharing food surplus, reducing waste, and fostering dignity through AI-powered food logistics.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
