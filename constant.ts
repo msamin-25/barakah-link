@@ -1,5 +1,5 @@
 
-import { FoodDrop } from './types';
+import { FoodDrop } from './backend/types';
 
 export const KW_CENTER = {
   lat: 43.4516,

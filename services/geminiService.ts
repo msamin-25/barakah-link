@@ -2,7 +2,7 @@
 import { GoogleGenAI, Type } from "@google/genai";
 
 // Always use the API_KEY from process.env directly per guidelines
-const ai = new GoogleGenAI({ apiKey: process.env.AAIzaSyCGnUTDNk_BcodKVFAuFa0Pi8TZfZhtAr0 });
+const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
 
 export interface AnalysisResult {
   tags: string[];

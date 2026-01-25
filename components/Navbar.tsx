@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { UserRole } from '../types';
+import { UserRole } from '../backend/types';
 import { Logo } from './Logo';
 
 interface NavbarProps {

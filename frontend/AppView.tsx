@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { UserRole, FoodDrop } from '../backend/types';
-import { DIETARY_TAGS, CANADIAN_CITIES } from '../constants';
+import { DIETARY_TAGS, CANADIAN_CITIES } from '../constant';
 import { Navbar } from '../components/Navbar';
 import { MapView } from '../components/MapView';
 import { FoodCard } from '../components/FoodCard';

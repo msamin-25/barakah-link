@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { Button } from './Button';
-import { UserRole } from '../types';
+import { UserRole } from '../backend/types';
 import { Logo } from './Logo';
 
 interface AuthViewProps {

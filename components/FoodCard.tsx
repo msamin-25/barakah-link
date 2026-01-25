@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { FoodDrop } from '../types';
+import { FoodDrop } from '../backend/types';
 
 interface FoodCardProps {
   drop: FoodDrop;

@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect, useRef } from 'react';
-import { SMSMessage, FoodDrop } from '../types';
+import { SMSMessage, FoodDrop } from '../backend/types';
 
 interface SMSViewProps {
   drops: FoodDrop[];

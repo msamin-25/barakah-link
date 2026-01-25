@@ -63,7 +63,7 @@ export const BarakahBackend = {
     }
 
     const newDrop: FoodDrop = {
-      id: Math.random().toString(36).substr(2, 9),
+      id: Math.random().toString(36).substring(2, 11),
       donorId,
       donorName,
       status: 'available',

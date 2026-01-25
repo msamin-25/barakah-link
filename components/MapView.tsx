@@ -1,7 +1,7 @@
 
 import React, { useEffect, useRef } from 'react';
-import { FoodDrop } from '../types';
-import { KW_CENTER } from '../constants';
+import { FoodDrop } from '../backend/types';
+import { KW_CENTER } from '../constant';
 
 interface MapViewProps {
   drops: FoodDrop[];
