@@ -150,7 +150,3 @@ Preview production build:
 ```bash
 npm run preview
 ```
-
-## License
-
-MIT
