@@ -2,8 +2,8 @@
 import { GoogleGenAI, Type } from "@google/genai";
 
 // Use Vite's import.meta.env for environment variables
-const apiKey = import.meta.env.VITE_GEMINI_API_KEY || import.meta.env.GEMINI_API_KEY || (typeof process !== 'undefined' ? process.env.GEMINI_API_KEY : '');
-const ai = new GoogleGenAI({ apiKey: apiKey || '' });
+throw new Error("Gemini API must be called from backend");
+
 
 export interface AnalysisResult {
   tags: string[];
