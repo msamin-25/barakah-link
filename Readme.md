@@ -46,8 +46,11 @@ cp .env.example .env
 
 4. Add your Gemini API key to `.env`:
 ```
-VITE_GEMINI_API_KEY=your_api_key_here
-GEMINI_API_KEY=your_api_key_here
+⚠️ Security note:
+Do NOT put real API keys in frontend environment variables.
+If you use Gemini, store the key in a backend or serverless function.
+This repo uses placeholder variables only.
+
 ```
 
 **Note:** The app supports both `VITE_GEMINI_API_KEY` and `GEMINI_API_KEY` for compatibility.
@@ -109,8 +112,11 @@ The app will be available at `http://localhost:3000`
 
 4. **Add environment variables**:
    ```bash
-   vercel env add VITE_GEMINI_API_KEY
-   vercel env add GEMINI_API_KEY
+   ⚠️ Security note:
+Do NOT put real API keys in frontend environment variables.
+If you use Gemini, store the key in a backend or serverless function.
+This repo uses placeholder variables only.
+
    ```
    Enter your API key when prompted for both.
 
