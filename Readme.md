@@ -52,7 +52,6 @@ GEMINI_API_KEY=your_api_key_here
 
 **Note:** The app supports both `VITE_GEMINI_API_KEY` and `GEMINI_API_KEY` for compatibility.
 
-Get your API key from [Google AI Studio](https://aistudio.google.com/apikey)
 
 5. Start the development server:
 ```bash
